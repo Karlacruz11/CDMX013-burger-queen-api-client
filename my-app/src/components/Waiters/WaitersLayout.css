@@ -17,7 +17,7 @@
     font-size: 62.5%;
 }
 
-#root {
+.container-waiters {
     display: flex;
     flex-direction: row;
     width: 113rem;
@@ -177,6 +177,14 @@ table {
     height: 8rem;
     bottom: 0.1rem;
 }
+
+.buttons-table-box{
+    display: flex;
+    align-content: center;
+    width: 42rem;
+    height: 8rem;
+    bottom: 0.1rem;
+}
 .new-order,
 .log-out {
     width: 7rem;
@@ -225,7 +233,7 @@ table {
     flex-direction: column;
 }
 
-header {
+.header-waiters-new-order {
     width: 103rem;
     height: 8rem;
     padding: 1rem;
@@ -254,6 +262,7 @@ header {
     border: 0.2rem solid var(--colorBrownTables);
     border-radius: 0.9rem;
     margin-left: 2rem;
+    padding: 1rem;
 }
 .input-table::-webkit-outer-spin-button,
 .input-table::-webkit-inner-spin-button {
@@ -420,19 +429,19 @@ header {
 }
 .delivered{
     display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 14rem;
-  height: 4rem;
-  background-color: #48BF53;;
-  border: 2px solid #48BF53;;
-  border-radius: 1.6rem;
-  font: var(--logotypeFont);
-  font-family: 'Chewy', cursive;
-  font-weight: 400;
-  font-size: 3.5rem;
-  color: var(--colorWhiteish);
- align-self: flex-end;
+    align-items: center;
+    justify-content: center;
+    width: 14rem;
+    height: 4rem;
+    background-color: #48BF53;;
+    border: 2px solid #48BF53;;
+    border-radius: 1.6rem;
+    font: var(--logotypeFont);
+    font-family: 'Chewy', cursive;
+    font-weight: 400;
+    font-size: 3.5rem;
+    color: var(--colorWhiteish);
+    align-self: flex-end;
 }
 .msg-total-price-ready{
     font: var(--principalFont);
@@ -462,4 +471,96 @@ header {
     width: 80rem;
     margin-left: 6rem;
     justify-content: space-around;
+}
+
+.table-orders-waiters{
+    width: 91.2rem;
+    height: 63.6rem;
+    background-color: var(--colorWhiteish);
+    border: 0.1rem solid var(--colorNavBar);
+    border-radius: 2rem;
+    font-weight: bold;
+    font-family: var(--principalFont);
+    color: var(--colorBrown);
+    font-size: 15rem;
+    margin-left: 5rem;
+}
+
+.order-table-waiters-body{
+    display: flex;
+    flex-direction: column;
+    min-height: 46rem;
+    max-height: 46rem;
+    overflow-y: scroll;
+}
+
+.order-table-waiters-body::-webkit-scrollbar{
+    display: none;
+}
+
+@media (min-width: 1180px){
+    .container-waiters {
+        width: auto;
+        height: 62.5rem;
+    }
+    
+    .tableMenu {
+        height: 50rem;
+        margin-left: 6rem;
+    }
+    
+    .container-bar {
+        height: 62.5rem;
+    }
+
+    .menu-waiter-table-body,
+    .ticket-body {
+        min-height: 30rem;
+        max-height: 30rem;
+    }
+ 
+    .logo-table-box {
+        margin-top: 3rem;
+        height: 6rem;
+    }
+
+    .buttons-table-box{
+        margin-top: 3rem;
+        height: 6rem;
+    }
+
+    .header-waiters-new-order {
+        width: 103rem;
+        margin-left: 5rem;
+    }
+    
+    .choose-table-letter{
+        font-size: 3.2rem;
+        font-weight: bolder;
+    }
+
+    .tables-menu-ticket {
+        justify-content: space-between;
+    }
+    
+    .tableTicket {
+        height: 50rem;
+        padding-left: 1rem;
+    }
+
+    .table-orders-waiters{
+        margin-left: 10rem;
+        width: 91.2rem;
+        height: 50rem;
+    }
+
+    .order-table-waiters-body{
+        min-height: 30rem;
+        max-height: 30rem;
+    }
+
+    .order-table-waiters-body::-webkit-scrollbar{
+        display: none;
+    }
+
 }

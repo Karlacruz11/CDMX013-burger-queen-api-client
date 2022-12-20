@@ -17,10 +17,10 @@
     font-size: 62.5%; 
 }
 
-#root {
+/* #root {
     width: 113rem;
     height: 75rem;
-}
+} */
 .main-container{
     width: 113rem;
     height: 75rem;
@@ -115,4 +115,56 @@
     color: var(--colorNavBar);
     text-align: center;
     border-bottom: 0.3rem solid var(--colorNavBar);
+}
+
+@media (min-width: 1180px) {
+
+    .main-container{
+        width: 136rem;
+        height: 62.5rem;
+        gap:10rem;
+    }
+
+    .burgerLogo{
+        width: 70rem;
+        height: auto;
+    }
+
+    .container-form{
+        width: 45rem;
+        height: 55rem;
+        background-color: var(--colorBoxBg);
+        margin-top: 3rem;
+        margin-right: 3rem;
+        border-radius: 3.5rem;
+    }
+
+    .form-box{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #logIn-logo{
+        margin-top: 4rem;
+        font-size: 6rem;
+    }
+
+    .fields-form{
+        font-size: 3rem;
+    }
+
+    .input-form{
+        width: 38rem;
+        height: 5rem;
+        font-size: 2rem;
+        padding: 1rem;
+    }
+
+    #start{
+        width: 15rem;
+        height: 6rem;
+        margin-top: 6rem;
+        font-size: 4rem;
+    }
+    
 }

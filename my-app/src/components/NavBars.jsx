@@ -1,5 +1,7 @@
 import { useNavigate } from 'react-router-dom'
 import { NavLink } from 'react-router-dom'
+import { useLocation } from 'react-router-dom'
+
 import Burger from '../images/Burger.png'
 import Queen from '../images/Queen.png'
 import check from '../images/check.png'
@@ -10,7 +12,6 @@ import prepared from '../images/prepared.png'
 import partners from '../images/partners.png'
 import products from '../images/products.png'
 import NavBar from './Waiters/NavBar'
-import { useLocation } from 'react-router-dom'
 
 function NavBars({handleAccount}) {
     

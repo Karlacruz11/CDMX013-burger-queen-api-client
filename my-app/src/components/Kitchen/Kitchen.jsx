@@ -51,7 +51,7 @@ function Kitchen({ handleAccount }) {
     }
 
     return (
-        <>
+        <div className="container-kitchen">
             <NavBars handleAccount={handleAccount} />
             <div className="body-active-order">
                 <Headers />
@@ -61,7 +61,8 @@ function Kitchen({ handleAccount }) {
                     <ModalConfirmKitchen isOpen={isOrderReady} close={closeOrderReady} editState={editState} />
                 </div>
             </div>
-        </>
+        </div>
+        
     )
 }
 export default Kitchen;

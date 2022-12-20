@@ -75,7 +75,7 @@ function Partners({handleAccount}) {
     }
     
     return (
-        <>
+        <div className='container-waiters'>
             <NavBars handleAccount={handleAccount}/>
     
             <ModalAddPartner isOpen={isAddPartner}
@@ -103,7 +103,7 @@ function Partners({handleAccount}) {
                     setAddPartners={setAddPartners}
                 />
             </div>
-        </>
+        </div>
     )
 }
 

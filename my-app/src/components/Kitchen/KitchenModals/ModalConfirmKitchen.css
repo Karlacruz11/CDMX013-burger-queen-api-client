@@ -84,3 +84,10 @@
     width: 39rem;
     height: 21rem;
 }
+@media (min-width: 1180px){
+  .modalKitchen {
+    width: 125rem;
+    height: 62rem;
+  }
+
+}

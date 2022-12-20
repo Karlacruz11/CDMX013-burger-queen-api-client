@@ -1,6 +1,7 @@
 import { useNavigate } from 'react-router-dom'
 import { useState } from 'react'
 import { getUsers } from '../../serviceApi'
+
 function Form({handleAccount}) {
     let navigate = useNavigate()
 
@@ -25,6 +26,7 @@ function Form({handleAccount}) {
                 result.data.forEach((user) => {
                     if ( user.email === email) {
                         handleAccount(user)
+                        console.log('test')
                         users = false
                         const role = user.role
                         switch (role) {
@@ -64,7 +66,7 @@ function Form({handleAccount}) {
         onInvalid={(e) => e.target.setCustomValidity('This field is empty')}
         onInput={(e) => e.target.setCustomValidity('')}
       />
-      <label htmlFor="password" className="fields-form">
+      <label className="fields-form" data-testid="pswd-label">
         Password
       </label>
       <input

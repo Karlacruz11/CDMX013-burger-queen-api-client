@@ -107,3 +107,11 @@
     font-size: 3.6rem;
     text-align: center;
 }
+
+@media (min-width: 1180px){
+    .modal-admin {
+        width: 115rem;
+        height: 63rem;
+    }
+    
+}

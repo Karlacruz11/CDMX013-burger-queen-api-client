@@ -14,7 +14,7 @@ function Headers ({text, setText}){
    
 if (location.pathname === '/waiters/new_order') {
   content = <Header>
-            <header>
+            <header className="header-waiters-new-order">
                 <div className="choose-table-box">
                     <label className="choose-table-letter">Table: </label>
                     <input
@@ -30,7 +30,7 @@ if (location.pathname === '/waiters/new_order') {
             </Header>
 } else if(location.pathname === '/kitchen/active' || location.pathname === '/kitchen/prepared'){
     content = <Header>
-                <header>
+                <header className="header-chefs">
                  <label className="role-letters-chefs">Chefs </label>;
                 </header>
              </Header>

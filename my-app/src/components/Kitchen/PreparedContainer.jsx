@@ -26,15 +26,16 @@ function PreparedContainer ({handleAccount}){
 
 
     return(
-    <> 
-    <NavBars handleAccount={handleAccount}/>
-    <div className="body-active-order">
-    <Headers/>
-    <div>
-    <PreparedTable isOrderReady={isOrderReady} openOrderReady={openOrderReady} closeOrderReady={closeOrderReady} orderReady={orderReady}/>
-    </div>
-    </div>
-    <ModalConfirmKitchen  isOrderReady={isOrderReady} closeOrderReady={closeOrderReady} />
-    </>)
+        <><div className="container-kitchen">
+            <NavBars handleAccount={handleAccount} />
+            <div className="body-active-order">
+                <Headers />
+                <div>
+                    <PreparedTable isOrderReady={isOrderReady} openOrderReady={openOrderReady} closeOrderReady={closeOrderReady} orderReady={orderReady} />
+                </div>
+            </div>
+            <ModalConfirmKitchen isOrderReady={isOrderReady} closeOrderReady={closeOrderReady} />
+            </div>
+        </>)
 }
 export default PreparedContainer;

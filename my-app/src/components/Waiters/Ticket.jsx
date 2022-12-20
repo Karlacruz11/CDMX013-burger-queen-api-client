@@ -8,7 +8,7 @@ function Ticket({text, productQty, products, openConfirmOrder, openCancelOrder, 
         <>
         <table className="tableTicket">
             <thead className="table-ticket-header">
-            <tr>
+            <tr className = 'tr-ticket-table-number'>
                 <th>Ticket Table #{text}</th>
             </tr>
             </thead>
@@ -35,7 +35,7 @@ function Ticket({text, productQty, products, openConfirmOrder, openCancelOrder, 
                     </td>
                 </tr> 
             </tbody>
-            <tfoot className="logo-table-box">
+            <tfoot className="buttons-table-box">
                 <tr className="container-ticketbuttons"> 
                     <td className="confirm-order-buttons-cell">
                         <div className="confirm-order-buttons">

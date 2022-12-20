@@ -1,3 +1,5 @@
+/*header*/
+
 header {
     width: 103rem;
     height: 8rem;
@@ -36,6 +38,9 @@ header {
     width: 3.2rem;
     height: 3.8rem;
 }
+
+/*table*/
+
 #partners-header {
     width: auto;
 }
@@ -125,5 +130,19 @@ a.active {
     display: flex;
     justify-content: flex-end;
     width: 75rem;
+    
+}
+
+@media (min-width: 1180px){
+    #partners {
+        /* height: 50rem; */
+        margin-left: 6rem;
+    }
+
+    .menu-partners-table-body, .menu-products-table-body {
+        min-height: 29rem;
+        max-height: 29rem;
+       
+    }
     
 }

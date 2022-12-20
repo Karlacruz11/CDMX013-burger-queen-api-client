@@ -16,20 +16,19 @@
   box-sizing: border-box;
   font-size: 62.5%;
 }
-#root {
+.container-kitchen {
     display: flex;
     flex-direction: row;
-    width: 113rem;
-    height: 75rem;
     background-color: var(--colorBg);
 }
+
 .body-active-order{
   display: flex;
   flex-direction: column;
 }
 .tableOrders {
   width: 91.2rem;
-  height: 63.6rem;
+  height: 50rem;
   background-color: var(--colorWhiteish);
   border: 0.1rem solid var(--colorNavBar);
   border-radius: 2rem;
@@ -38,8 +37,6 @@
   color: var(--colorBrown);
   font-size: 15rem;
   margin-left: 5rem;
-  
-
 }
 .table-order-header {
   display: flex;
@@ -60,6 +57,10 @@
   max-height: 46rem;
   overflow-y: scroll;
 }
+.order-table-body::-webkit-scrollbar{
+  display: none;
+}
+
 
 .container-logo-burger-orders {
   display: flex;
@@ -213,6 +214,27 @@ display:flex;
 
 }
 
+@media (min-width: 1180px){
+  .container-kitchen {
+      width: auto;
+      height: 62.5rem;
+  }
+  .tableOrders{
+  height: 50rem;
+  margin-left: 6rem;
+  }
+.order-table-body, .body-active-order {
+  min-height: 30rem;
+  max-height: 30rem;
+}
 
- 
+.header-chefs{
+  width: 10rem;
+}
+.logo-table-box-chefs {
+  margin-top: 3rem;
+  height: 6rem;
+}
+
+}
 
