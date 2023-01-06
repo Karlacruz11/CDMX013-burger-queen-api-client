@@ -1,4 +1,5 @@
 :root{
+    --colorBg: #FDDC9B;
     --logotypeFont: 'Chewy';
 }
 * {
@@ -11,13 +12,13 @@
     grid-template-rows: 1fr auto 1fr;
     justify-items: center;
     width: 113rem;
-    height: 74rem;
+    height: 75rem;
     font-size: 10rem;
-   
     gap: 2rem;
-   
     color:  #f63522;
     font-family: 'Chewy', cursive;
+    background-color: var(--colorBg);
+    
 
 }
 .potato-fire{
@@ -41,3 +42,20 @@
     font-size: 4.8rem;
     color: var(--colorWhiteish);
   }
+  @media (min-width: 1180px) {
+
+    .error-msg-box{
+        width: 136.2rem;
+        height: 62.5rem;
+    }
+    .potato-fire{
+        width: 40rem;
+        height: 40rem;
+        border-radius: 4.5rem;
+    
+    }
+    .button-return{
+        width: 15.4rem;
+        height: 5.6rem;
+    }
+}
