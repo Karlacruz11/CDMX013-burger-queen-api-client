@@ -1,170 +1,179 @@
 /* Predefined properties*/
 :root {
-    --colorBg: #FDDC9B;
-    --colorNavBar: #F63522;
-    --colorBoxBg: #FFF2Ec;
-    --colorBrownTables: #693B17;
-    --colorBrown: #773F2F;
-    --colorYellow: #FAC74F;
-    --colorWhiteish: #FFFEEC;
-    --logotypeFont: 'Chewy';
-    --principalFont: 'Alegreya Sans', sans-serif;
+  --colorBg: #fddc9b;
+  --colorNavBar: #f63522;
+  --colorBoxBg: #fff2ec;
+  --colorBrownTables: #693b17;
+  --colorBrown: #773f2f;
+  --colorYellow: #fac74f;
+  --colorWhiteish: #fffeec;
+  --logotypeFont: 'Chewy';
+  --principalFont: 'Alegreya Sans', sans-serif;
 }
 
 * {
-    margin: 0px;
-    box-sizing: border-box;
-    font-size: 62.5%; 
+  margin: 0px;
+  box-sizing: border-box;
+  font-size: 62.5%;
 }
 
 /* #root {
     width: 113rem;
     height: 75rem;
 } */
-.main-container{
-    width: 113rem;
-    height: 75rem;
-    display: flex;
-    flex-direction: row;
-    background-color: var(--colorBg);
+.main-container {
+  width: 113rem;
+  height: 75rem;
+  display: flex;
+  flex-direction: row;
+  background-color: var(--colorBg);
 }
 
-.burgerLogo{
-    width: 65rem;
-    height: 75rem;
+.burgerLogo {
+  width: 65rem;
+  height: 75rem;
 }
 
-.container-form{
-    width: 42.2rem;
-    height: 67rem;
+.container-form {
+  width: 42.2rem;
+  height: 67rem;
+  background-color: var(--colorBoxBg);
+  margin-top: 3rem;
+  margin-right: 3rem;
+  border-radius: 3.5rem;
+}
+
+.form-box {
+  display: flex;
+  flex-direction: column;
+}
+
+#logIn-logo {
+  margin-top: 7.7rem;
+  font: var(--logotypeFont);
+  font-family: 'Chewy', cursive;
+  font-size: 6.8rem;
+  color: var(--colorNavBar);
+  align-self: center;
+}
+
+.fields-form {
+  font: var(--logotypeFont);
+  font-family: 'Chewy', cursive;
+  font-size: 3.6rem;
+  color: var(--colorBrown);
+  margin-left: 4rem;
+  margin-top: 2rem;
+}
+
+.input-form {
+  margin-left: 4rem;
+  margin-top: 1rem;
+  width: 35.5rem;
+  height: 6rem;
+  border: 0.2rem solid var(--colorNavBar);
+  border-radius: 1.5rem;
+  font-family: var(--principalFont);
+  font-size: 3rem;
+  color: var(--colorBrown);
+  padding: 1rem;
+}
+
+.start {
+  width: 19rem;
+  height: 7.5rem;
+  background-color: var(--colorNavBar);
+  margin-top: 0;
+  border: none;
+  border-radius: 1.6rem;
+  font: var(--logotypeFont);
+  font-family: 'Chewy', cursive;
+  font-size: 4.8rem;
+  color: var(--colorWhiteish);
+  align-self: center;
+}
+
+.start.roll {
+  width: 10rem;
+  height: 4rem;
+  font-size: 2rem;
+  border-radius: 1rem;
+  margin: 2rem;
+}
+
+.start:hover {
+  background-color: var(--colorYellow);
+  color: var(--colorNavBar);
+  cursor: pointer;
+  border: 2px solid var(--colorNavBar);
+}
+
+.errorMessage {
+  width: 30rem;
+  height: 5rem;
+  align-self: center;
+  margin-top: 2rem;
+}
+
+.messageError {
+  font-size: 2.5rem;
+  font-family: var(--principalFont);
+  font-weight: bold;
+  color: var(--colorNavBar);
+  text-align: center;
+  border-bottom: 0.3rem solid var(--colorNavBar);
+}
+
+.info {
+  font-size: 2rem;
+  color: var(----colorBrown);
+}
+@media (min-width: 1180px) {
+  .main-container {
+    width: 136rem;
+    height: 62.5rem;
+    gap: 10rem;
+  }
+
+  .burgerLogo {
+    width: 70rem;
+    height: auto;
+  }
+
+  .container-form {
+    width: 45rem;
+    height: 55rem;
     background-color: var(--colorBoxBg);
     margin-top: 3rem;
     margin-right: 3rem;
     border-radius: 3.5rem;
-}
+  }
 
-.form-box{
+  .form-box {
     display: flex;
     flex-direction: column;
-}
+  }
 
-#logIn-logo{
-    margin-top: 7.7rem;
-    font: var(--logotypeFont);
-    font-family:  'Chewy', cursive;
-    font-size: 6.8rem;
-    color: var(--colorNavBar);
-    align-self: center;
-}
+  #logIn-logo {
+    margin-top: 0;
+    font-size: 6rem;
+  }
 
-.fields-form{
-    font: var(--logotypeFont);
-    font-family:  'Chewy', cursive;
-    font-size: 3.6rem;
-    color: var(--colorBrown);
-    margin-left: 4rem;
-    margin-top: 2rem;
-}
-
-.input-form{
-    margin-left: 4rem;
-    margin-top: 1rem;
-    width: 35.5rem;
-    height: 6rem;
-    border: 0.2rem solid var(--colorNavBar);
-    border-radius: 1.5rem;
-    font-family: var(--principalFont);
+  .fields-form {
     font-size: 3rem;
-    color: var(--colorBrown);
-    padding: 1rem;
-}
+  }
 
-#start{
-    width: 19rem;
-    height: 7.5rem;
-    background-color: var(--colorNavBar);
-    margin-top: 4rem;
-    border: none;
-    border-radius: 1.6rem;
-    font:var(--logotypeFont);
-    font-family:  'Chewy', cursive;
-    font-size: 4.8rem;
-    color: var(--colorWhiteish);
-    align-self: center;
-}
-
-#start:hover{
-    background-color: var(--colorYellow);
-    color: var(--colorNavBar);
-    cursor: pointer;
-    border: 2px solid var(--colorNavBar);
-
-}
-
-.errorMessage{
-    width: 30rem;
+  .input-form {
+    width: 38rem;
     height: 5rem;
-    align-self: center;
-    margin-top: 2rem
-}
+    font-size: 2rem;
+    padding: 1rem;
+  }
 
-.messageError{
-    font-size: 2.5rem;
-    font-family: var(--principalFont);
-    font-weight: bold;
-    color: var(--colorNavBar);
-    text-align: center;
-    border-bottom: 0.3rem solid var(--colorNavBar);
-}
-
-@media (min-width: 1180px) {
-
-    .main-container{
-        width: 136rem;
-        height: 62.5rem;
-        gap:10rem;
-    }
-
-    .burgerLogo{
-        width: 70rem;
-        height: auto;
-    }
-
-    .container-form{
-        width: 45rem;
-        height: 55rem;
-        background-color: var(--colorBoxBg);
-        margin-top: 3rem;
-        margin-right: 3rem;
-        border-radius: 3.5rem;
-    }
-
-    .form-box{
-        display: flex;
-        flex-direction: column;
-    }
-
-    #logIn-logo{
-        margin-top: 4rem;
-        font-size: 6rem;
-    }
-
-    .fields-form{
-        font-size: 3rem;
-    }
-
-    .input-form{
-        width: 38rem;
-        height: 5rem;
-        font-size: 2rem;
-        padding: 1rem;
-    }
-
-    #start{
-        width: 15rem;
-        height: 6rem;
-        margin-top: 6rem;
-        font-size: 4rem;
-    }
-    
+  .start {
+    width: 15rem;
+    height: 6rem;
+    margin-top: 1.6rem;
+    font-size: 4rem;
+  }
 }
